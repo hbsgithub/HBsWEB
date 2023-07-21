@@ -13,22 +13,12 @@ keywords: [Docker, Docker-compose]
 
 
 ```bash showLineNumbers
-curl -fsSL https://get.docker.com | bash
+sudo curl -fsSL https://get.docker.com | bash
 ```
-:::note
 
-root权限下运行
-
-:::
 ## Docker-compose安装命令
 
 ```bash showLineNumbers
-curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
-
-:::note
-
-root权限下运行
-
-:::
