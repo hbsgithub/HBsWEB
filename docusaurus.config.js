@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://www.hbio.me',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -41,15 +41,15 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -92,10 +92,16 @@ const config = {
 
       },
 
+      algolia: {
+        apiKey : "dca4e61640644f378eb8ffd7390f75e2" ,
+        appId : "HJ4QHMH01Y" ,
+        indexName : "HBSWEB" ,
+      },
+
       announcementBar: {
         id: 'support_us', // Any value that will identify this message.
         content:
-          '🌟 如果我的网站内容有帮助到你的话，可以考虑到我的<a target="_blank" rel="noopener noreferrer" href="https://github.com/hbsgithub">Github</a>点个Star哦！🌟',
+          '🌟 如果我的网站内容有帮助到你的话，可以考虑到我的<a target="_blank" rel="noopener noreferrer" href="https://github.com/hbsgithub/HBsWEB">Github</a>点个Star哦！🌟',
         backgroundColor: '#fafbfc', // Defaults to `#fff`.
         textColor: '#091E42', // Defaults to `#000`.
         isCloseable: true, // Defaults to `true`.
