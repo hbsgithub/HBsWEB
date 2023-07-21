@@ -1,24 +1,38 @@
 import React from 'react';
 import clsx from 'clsx';
+import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
 import styles from './index.module.css';
+import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <h1 className="hero__title">
+		  <p className="hero__title_content">
+		    <b>HBs</b>WEB
+		  </p>
+		</h1>
+        <p className="hero__subtitle">
+		  Who has seen the wind? Neither I nor you.
+		</p>
+		<p className="hero__subtitle">
+		  But when the leaves hang trembling, The wind is passing through.
+		</p>
+		<p className="hero__subtitle">
+		  Who has seen the wind? Neither you nor I.
+		</p>
+		<p className="hero__subtitle">
+		  But when the trees bow down their heads, The wind is passing by.
+		</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--info"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Get Started
           </Link>
         </div>
       </div>
@@ -31,7 +45,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="这是HB的主页！">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

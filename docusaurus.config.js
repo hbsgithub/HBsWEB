@@ -102,7 +102,7 @@ const config = {
         id: 'support_us', // Any value that will identify this message.
         content:
           '🌟 如果我的网站内容有帮助到你的话，可以考虑到我的<a target="_blank" rel="noopener noreferrer" href="https://github.com/hbsgithub/HBsWEB">Github</a>点个Star哦！🌟',
-        backgroundColor: '#fafbfc', // Defaults to `#fff`.
+        // backgroundColor: '#fafbfc', // Defaults to `#fff`.
         textColor: '#091E42', // Defaults to `#000`.
         isCloseable: true, // Defaults to `true`.
       },
@@ -150,10 +150,10 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} HBsWEB, Tech. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HBsWEB. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
+        theme: require('prism-react-renderer/themes/dracula'),
         darkTheme: darkCodeTheme,
         additionalLanguages: ['powershell'],
       },
