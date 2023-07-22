@@ -3,7 +3,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 
 import Banner from "../components/Banner/Banner";
-import Projects from "../components/Projects/Projects";
+// import Projects from "../components/Projects/Projects";
 import Project from "../helper/Projects.json";
 // import Skills from "../helper/Skills.json";
 // import Skill from "../components/Skill/Skill";
