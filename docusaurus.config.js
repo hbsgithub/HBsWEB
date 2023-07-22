@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "HB's Site",
-  tagline: 'Dinosaurs are cool',
+  title: "HB's WEB",
+  tagline: "Welcome to HB's WEB",
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -64,7 +64,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: "HB's Site",
+        title: "HB's WEB",
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -150,7 +150,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} HBsWEB. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HBsWEB.`,
       },
       prism: {
         theme: require('prism-react-renderer/themes/dracula'),

@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
 title: Intro
-description: 目录
+description: 介绍
 # image: a thumbnail image to be shown in social media cards
-keywords: [目录, 导航]
+keywords: [目录, 导航, 介绍]
 ---
 
 import Link from "@docusaurus/Link";
