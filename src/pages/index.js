@@ -1,55 +1,60 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
+import React from "react";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">
-		  <p className="hero__title_content">
-		    <b>HBs</b>WEB
-		  </p>
-		</h1>
-        <p className="hero__subtitle">
-		  Who has seen the wind? Neither I nor you.
-		</p>
-		<p className="hero__subtitle">
-		  But when the leaves hang trembling, The wind is passing through.
-		</p>
-		<p className="hero__subtitle">
-		  Who has seen the wind? Neither you nor I.
-		</p>
-		<p className="hero__subtitle">
-		  But when the trees bow down their heads, The wind is passing by.
-		</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--info"
-            to="/docs/intro">
-            Get Started
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import Banner from "../components/Banner/Banner";
+import Projects from "../components/Projects/Projects";
+import Project from "../helper/Projects.json";
+import Skills from "../helper/Skills.json";
+import Skill from "../components/Skill/Skill";
 
+import SideProject from "../helper/SideProjects.json";
+import Experiences from "../helper/Experiences.json";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+import "./index.css";
+import Experience from "../components/Experience/Experience";
+//
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="这是HB的主页！">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      title={`${siteConfig.title}`}
+      description="HB's WEB"
+      wrapperClassName="Layout"
+    >
+      <Banner />
+      {/* <main>
+        <Skill Skills={Skills} />
+        <h1
+          style={{
+            fontSize: "clamp(2rem, 3vw + 1rem, 3rem)",
+            textAlign: "center",
+            marginBottom: "4rem",
+            marginTop: "4rem",
+          }}
+        >
+          求學經歷
+        </h1>
+
+        <BrowserOnly fallback={<Loading />}>
+          {() => {
+            return <Experience Experiences={Experiences} />;
+          }}
+        </BrowserOnly>
+
+        <Projects ProjectsData={Project} title="曾經參與過的專案 (比賽專題)" />
+        <Projects ProjectsData={SideProject} title="個人作品 (Side Projects)" />
+      </main> */}
     </Layout>
   );
 }
+
+const Loading = () => (
+  <div class="loading">
+    <div class="loadingio-spinner-rolling-f1v13ukb9js">
+      <div class="ldio-nawj84fd2cd">
+        <div></div>
+      </div>
+    </div>
+  </div>
+);

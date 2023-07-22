@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "projectTitle": "Github 主頁面經營",
+    "projectDescribe": "將相關比賽經歷和學習過的程式語言與工具列出，並利用 Github Action 來實作自動化功能，當 Youtube 頻道有新影片上傳或是 Medium Post 有新文章上傳時，就會觸發 Action ，將影片與文章連結自動更新至 Github 主頁面。",
+    "projectImage": "img/projects/GithubResume.png",
+    "githubUrl": "https://github.com/WeiYun0912",
+    "tech": [
+      {
+        "name": "Github Action Workflows",
+        "color": "#181823"
+      },
+      {
+        "name": "Markdown",
+        "color": "#20262E"
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "projectTitle": "Youtube 頻道經營",
+    "projectDescribe": "日常會分享一些程式語言或工具的使用方式，透過這樣的方式來記錄自己曾經做了哪些事情，以後如果忘記程式或工具的使用方式也可以透過影片幫助自己回想起來，同時也抱持著有一天這部影片搞不好能夠幫助到人的想法。",
+    "projectImage": "img/projects/Youtube.png",
+    "channelUrl": "https://www.youtube.com/channel/UCy1Q33r6POsxGTtZcOF--Fw"
+  },
+  {
+    "id": 3,
+    "projectTitle": "電影介紹 網頁",
+    "projectDescribe": "使用 React 來製作一個電影介紹網站，主要是練習如何使用 React 去 Fetch 別人的 API，並把拿到的資料進行整理並顯示在畫面上供別人查看，在該次開發也遇到了問題，因網頁載入時會直接將電影的圖片顯示出來，如果圖片太多張則會導致網頁有效能的問題，於是最後使用了 Image Lazy Loading 來解決此問題。",
+    "projectImage": "img/projects/MovieWebsite.png",
+    "githubUrl": "https://github.com/WeiYun0912/starmovie",
+    "tech": [
+      {
+        "name": "React",
+        "color": "#0081B4"
+      },
+      {
+        "name": "Redux",
+        "color": "#913175"
+      },
+      {
+        "name": "Axios",
+        "color": "#39B5E0"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "projectTitle": "調酒介紹 網頁",
+    "projectDescribe": "使用 React 來製作一個調酒介紹網站，同樣是去 Fetch 別人的 API ，而該專案是想練習 React 如何製作動畫特效。",
+    "projectImage": "img/projects/DriDriGo.png",
+    "tech": [
+      {
+        "name": "React",
+        "color": "#0081B4"
+      },
+      {
+        "name": "Redux",
+        "color": "#913175"
+      }
+    ],
+    "githubUrl": "https://github.com/WeiYun0912/DriDriGo"
+  },
+
+  {
+    "id": 5,
+    "projectTitle": "Open-Sea Clone",
+    "projectDescribe": "觀看 Youtube 的 Clone 影片，Clone 出 Open Sea ，在過程中也接觸到新的工具 ThirdWeb，透過 ThirdWeb 能夠快速地建立想要的智能合約類型，例如 ERC20、ERC721 ，而我們只需要透過 ThirdWeb 提供的 SDK 去操作智能合約，就能讓網站達到去中心化。",
+    "projectImage": "img/projects/OpenSea.png",
+    "tech": [
+      {
+        "name": "React",
+        "color": "#0081B4"
+      },
+      {
+        "name": "ThirdWeb",
+        "color": "#EB455F"
+      },
+      {
+        "name": "Sanity.io",
+        "color": "#C58940"
+      }
+    ],
+    "githubUrl": "https://github.com/WeiYun0912/opensea-clone"
+  },
+  {
+    "id": 6,
+    "projectTitle": "電影介紹 APP",
+    "projectDescribe": "第一個React Native專案，學習如何使用 React Native Expo 進行開發，在開發結束將專案打包成APK檔案時，發現 Expo 預設產生的 APK 檔案非常大，於是寫了一篇使用原生 React Native 打包 APK 的文章給自己看。",
+    "projectImage": "img/projects/MovieAPP.png",
+    "tech": [
+      {
+        "name": "React Native Expo",
+        "color": "#0081B4"
+      }
+    ],
+    "githubUrl": "https://github.com/WeiYun0912/React-Native-Wei-Movies"
+  },
+  {
+    "id": 7,
+    "projectTitle": "圖書 APP",
+    "projectDescribe": "因家人有買書的習慣，但常常會忘記該本書是否已經買過，導致又買了一樣的書，為了解決此問題，用了 React Native 製作一款APP供家人使用，將書籍資料建檔以後即可在該APP查詢，透過手機掃描書籍ISBN號碼後，可以進行本地搜尋或線上搜尋來確認這本書是否已經購買過。",
+    "projectImage": "img/projects/NativeBook.png",
+    "tech": [
+      {
+        "name": "React Native Expo",
+        "color": "#0081B4"
+      },
+      {
+        "name": "BarCode Scanner",
+        "color": "#263159"
+      },
+      {
+        "name": "GraphQL",
+        "color": "#FB2576"
+      },
+      {
+        "name": "MongoDB",
+        "color": "#68B984"
+      },
+      {
+        "name": "Mongoose",
+        "color": "#FF1E1E"
+      },
+      {
+        "name": "Puppeteer",
+        "color": "#7FB77E"
+      }
+    ],
+    "githubUrl": "https://github.com/WeiYun0912/React-Native-Book"
+  },
+  {
+    "id": 8,
+    "projectTitle": "怪獸電力公司 刻板練習",
+    "projectDescribe": "在閒暇之餘喜歡挑戰自己對於 CSS 的熟悉程度，所以都會找喜歡的卡通或電影來製作一個簡單的 Landing Page。",
+    "projectImage": "img/projects/MonsterInc.png",
+    "tech": [
+      {
+        "name": "HTML",
+        "color": "#FF1E00"
+      },
+      {
+        "name": "CSS",
+        "color": "#0096FF"
+      },
+      {
+        "name": "JavaScript",
+        "color": "#E6B325"
+      }
+    ],
+    "githubUrl": "https://github.com/WeiYun0912/Monster-Inc"
+  },
+  {
+    "id": 9,
+    "projectTitle": "辛普森家庭 刻板練習",
+    "projectDescribe": "在閒暇之餘喜歡挑戰自己對於 CSS 的熟悉程度，所以都會找喜歡的卡通或電影來製作一個簡單的 Landing Page。",
+    "projectImage": "img/projects/Simpsons.png",
+    "tech": [
+      {
+        "name": "HTML",
+        "color": "#FF1E00"
+      },
+      {
+        "name": "CSS",
+        "color": "#0096FF"
+      },
+      {
+        "name": "JavaScript",
+        "color": "#E6B325"
+      }
+    ],
+    "githubUrl": "https://github.com/WeiYun0912/simpsons"
+  }
+]

@@ -157,3 +157,15 @@ nav[aria-label="Docs pages navigation"] {
 .footer {
   background-color: #2b3137;
 }
+
+div[class^="announcementBar_"] {
+  font-size: 1.2em;
+  font-weight: bold;
+  background: repeating-linear-gradient(
+    35deg,
+    rgb(25, 54, 48),
+    rgb(25, 54, 48) 20px,
+    rgb(37, 80, 70) 10px,
+    rgb(37, 80, 70) 40px
+  );
+}
