@@ -32,6 +32,8 @@ const config = {
     locales: ['zh-Hans'],
   },
 
+  themes: ["@docusaurus/theme-live-codeblock"],
+
   presets: [
     [
       'classic',
@@ -102,8 +104,8 @@ const config = {
         id: 'support_us', // Any value that will identify this message.
         content:
           '🌟 如果我的网站内容有帮助到你的话，可以考虑到我的<a target="_blank" rel="noopener noreferrer" href="https://github.com/hbsgithub/HBsWEB">Github</a>点个Star哦！🌟',
-        // backgroundColor: '#fafbfc', // Defaults to `#fff`.
-        textColor: '#091E42', // Defaults to `#000`.
+        backgroundColor: "#fafbfc", // Defaults to `#fff`.
+        textColor: '#fff', // Defaults to `#000`.
         isCloseable: true, // Defaults to `true`.
       },
 
@@ -150,12 +152,23 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} HBsWEB.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HB's WEB.`,
       },
       prism: {
         theme: require('prism-react-renderer/themes/dracula'),
         darkTheme: darkCodeTheme,
         additionalLanguages: ['powershell'],
+        magicComments: [
+          {
+            className: "theme-code-block-highlighted-line",
+            line: "highlight",
+            block: { start: "highlight-start", end: "highlight-end" },
+          },
+          {
+            className: "code-block-error-line",
+            line: "error",
+          },
+        ],
       },
     }),
 };
