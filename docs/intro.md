@@ -35,3 +35,8 @@ import Link from "@docusaurus/Link";
 ## <Link to= "/docs/category/docusaurus">Docusaurus</Link>
 
 - <Link to= "/docs/Docusaurus/Algolia搜索功能">Algolia搜索功能</Link>
+
+## <Link to= "/docs/category/nezha">Nezha</Link>
+
+- <Link to= "/docs/Nezha/Nezha面板美化">Nezha面板美化</Link>
+- <Link to= "/docs/Nezha/通过Cloudflare%20gRPC隐藏Nezha探针通信IP">通过Cloudflare gRPC隐藏Nezha探针通信IP</Link>
