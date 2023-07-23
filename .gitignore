@@ -15,7 +15,9 @@
 .env.test.local
 .env.production.local
 .env
+
 config.json
+update.sh
 
 npm-debug.log*
 yarn-debug.log*

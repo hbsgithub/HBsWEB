@@ -1,0 +1,91 @@
+---
+# sidebar_position: 2
+title: tmux美化
+description: tmux美化相关设置
+# image: a thumbnail image to be shown in social media cards
+keywords: [tmux, 美化]
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# tmux美化
+:::info
+tmux是一个终端复用工具，可以在一个终端中同时运行多个终端
+:::
+## 安装tmux
+<Tabs>
+  <TabItem value="linux" label="Linux" default>
+
+```bash
+sudo apt install tmux
+```
+
+  </TabItem>
+  <TabItem value="mac" label="macOS">
+
+```bash
+brew install tmux
+```
+
+  </TabItem>
+</Tabs>
+
+:::tip
+mac os需先安装homebrew
+:::
+
+## 安装tmux主题
+
+### dracula主题
+:::tip
+官方链接:https://draculatheme.com/tmux
+:::
+
+1. 首先安装tpm
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+vim ~/.tmux.conf
+```
+填入以下内容
+
+```bash
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'github_username/plugin_name#branch'
+# set -g @plugin 'git@github.com:user/plugin'
+# set -g @plugin 'git@bitbucket.com:user/plugin'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
+```
+
+2. 加载配置
+```bash
+# type this in terminal if tmux is already running
+tmux source ~/.tmux.conf
+```
+3. 安装dracula主题
+在～/.tmux.conf填入以下内容
+```bash
+set -g @plugin 'dracula/tmux'
+set -g @dracula-plugins "cpu-usage gpu-usage ram-usage network-bandwidth"
+set -g @dracula-network-bandwidth-colors "pink dark_gray"
+set -g @dracula-show-powerline true
+set -g @dracula-show-flags true
+set -g @dracula-border-contrast true
+```
+4. Activating theme
+   
+   1. Make sure run -b '~/.tmux/plugins/tpm/tpm' is at the bottom of your .tmux.conf
+   2. Run tmux
+   3. Use the tpm install command: prefix + I (default prefix is ctrl+b)
+
+## tmux启用鼠标操作
+在～/.tmux.conf填入以下内容
+```bash
+set -g mouse on
+```

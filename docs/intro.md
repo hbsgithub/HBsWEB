@@ -40,3 +40,9 @@ import Link from "@docusaurus/Link";
 
 - <Link to= "/docs/Nezha/Nezha面板美化">Nezha面板美化</Link>
 - <Link to= "/docs/Nezha/通过Cloudflare%20gRPC隐藏Nezha探针通信IP">通过Cloudflare gRPC隐藏Nezha探针通信IP</Link>
+
+## <Link to= "/docs/category/终端美化及使用技巧">终端美化及使用技巧</Link>
+
+- <Link to= "/docs/终端美化及使用技巧/tmux">tmux美化</Link>
+- <Link to= "/docs/终端美化及使用技巧/vim">Vim美化</Link>
+- <Link to= "/docs/终端美化及使用技巧/zsh">zsh美化</Link>
