@@ -72,11 +72,27 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Note',
+          // },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Note',
+            type: "dropdown",
+            label: "Note",
+            position: "left",
+            to: "docs/Note/intro",
+            items: [
+              {
+                to: "docs/Note/intro",
+                label: "Note",
+              },
+              {
+                to: "docs/玩转Armbian盒子/intro",
+                label: "Armbian",
+              },
+            ],
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -153,6 +169,12 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} HB's WEB.`,
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
       },
       prism: {
         theme: require('prism-react-renderer/themes/dracula'),
