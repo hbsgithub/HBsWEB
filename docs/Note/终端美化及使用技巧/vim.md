@@ -1,5 +1,5 @@
 ---
-# sidebar_position: 2
+sidebar_position: 1
 title: Vim美化
 description: Vim美化相关设置
 # image: a thumbnail image to be shown in social media cards
@@ -64,3 +64,6 @@ set ignorecase
 ```bash
 set mouse=a
 ```
+
+## 常见问题
+[Dracula theme for Vim 不明高亮、斜体失效问题及解决方法（Mac Iterm2)](https://zhuanlan.zhihu.com/p/308340400)

@@ -1,5 +1,5 @@
 ---
-# sidebar_position: 2
+sidebar_position: 2
 title: Zsh美化
 description: Zsh美化相关设置
 # image: a thumbnail image to be shown in social media cards

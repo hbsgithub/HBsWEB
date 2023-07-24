@@ -1,0 +1,72 @@
+---
+sidebar_position: 2
+title: 安装Docker
+description: armbian系统安装Docker的方法
+# image: a thumbnail image to be shown in social media cards
+keywords: [armbian, docker, 安装]
+---
+
+# 安装 Docker
+
+## 更改 Armbian 软件源（Debian）
+
+```bash
+nano /etc/apt/sources.list
+```
+
+将文件中的内容替换为以下内容
+
+```bash
+deb https://mirrors.aliyun.com/debian stable main contrib non-free
+deb https://mirrors.aliyun.com/debian stable-updates main contrib non-free
+```
+
+:::tip
+如果没有 nano 编辑器的请先下载安装 nano 或直接使用自带的 vim 编辑器
+
+```bash
+sudo apt-get install nano
+```
+
+:::
+
+## 更新软件源
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+## 安装&配置 docker
+
+1. 安装 docker
+
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh --mirror Aliyun #调用阿里云镜像
+```
+
+2. 更换 docker 加速源
+
+```bash
+nano /etc/docker/daemon.json
+```
+
+将文件中的内容替换为以下内容
+
+```json
+{
+  "registry-mirrors": [
+    "https://registry.docker-cn.com",
+    "http://hub-mirror.c.163.com",
+    "https://docker.mirrors.ustc.edu.cn"
+  ]
+}
+```
+
+3. 重启 docker
+
+```bash
+systemctl daemon-reload
+systemctl restart docker
+```

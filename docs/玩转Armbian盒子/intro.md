@@ -11,7 +11,7 @@ import Link from "@docusaurus/Link";
 # Intro
 :::info
 
-记录了一些有趣的项目的搭建方法
+记录了Armbian盒子的一些有趣的玩法
 
 :::
 ## <Link to= "/docs/category/docker">Docker</Link>
@@ -46,3 +46,4 @@ import Link from "@docusaurus/Link";
 - <Link to= "/docs/终端美化及使用技巧/tmux">tmux美化</Link>
 - <Link to= "/docs/终端美化及使用技巧/vim">Vim美化</Link>
 - <Link to= "/docs/终端美化及使用技巧/zsh">zsh美化</Link>
+- <Link to= "/docs/终端美化及使用技巧/ssh免密配置">ssh免密配置</Link>

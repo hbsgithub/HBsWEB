@@ -12,7 +12,7 @@ const Banner = () => {
         <h2 className={styles.bannerRewardTotal}>
           Be better than yesterday.
         </h2>
-        <Link to="/docs/intro">
+        <Link to="/docs/Note/intro">
           <button className={styles.bannerPortfolio}>Hello World!</button>
         </Link>
         <div className={styles.bannerSocialMedia}>

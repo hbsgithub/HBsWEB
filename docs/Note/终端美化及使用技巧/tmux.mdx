@@ -1,18 +1,22 @@
 ---
-# sidebar_position: 2
+sidebar_position: 3
 title: tmux美化
 description: tmux美化相关设置
 # image: a thumbnail image to be shown in social media cards
 keywords: [tmux, 美化]
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
-# tmux美化
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# tmux 美化
+
 :::info
-tmux是一个终端复用工具，可以在一个终端中同时运行多个终端
+tmux 是一个终端复用工具，可以在一个终端中同时运行多个终端
 :::
-## 安装tmux
+
+## 安装 tmux
+
 <Tabs>
   <TabItem value="linux" label="Linux" default>
 
@@ -31,21 +35,24 @@ brew install tmux
 </Tabs>
 
 :::tip
-mac os需先安装homebrew
+mac os 需先安装 homebrew
 :::
 
-## 安装tmux主题
+## 安装 tmux 主题
 
-### dracula主题
+### dracula 主题
+
 :::tip
 官方链接:https://draculatheme.com/tmux
 :::
 
-1. 首先安装tpm
+1. 首先安装 tpm
+
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 vim ~/.tmux.conf
 ```
+
 填入以下内容
 
 ```bash
@@ -64,12 +71,15 @@ run '~/.tmux/plugins/tpm/tpm'
 ```
 
 2. 加载配置
+
 ```bash
 # type this in terminal if tmux is already running
 tmux source ~/.tmux.conf
 ```
-3. 安装dracula主题
-在～/.tmux.conf填入以下内容
+
+3. 安装 dracula 主题
+   在～/.tmux.conf 填入以下内容
+
 ```bash
 set -g @plugin 'dracula/tmux'
 set -g @dracula-plugins "cpu-usage gpu-usage ram-usage network-bandwidth"
@@ -78,14 +88,17 @@ set -g @dracula-show-powerline true
 set -g @dracula-show-flags true
 set -g @dracula-border-contrast true
 ```
+
 4. Activating theme
-   
+
    1. Make sure run -b '~/.tmux/plugins/tpm/tpm' is at the bottom of your .tmux.conf
    2. Run tmux
    3. Use the tpm install command: prefix + I (default prefix is ctrl+b)
 
-## tmux启用鼠标操作
-在～/.tmux.conf填入以下内容
+## tmux 启用鼠标操作
+
+在～/.tmux.conf 填入以下内容
+
 ```bash
 set -g mouse on
 ```
