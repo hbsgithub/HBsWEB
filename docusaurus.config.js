@@ -133,7 +133,11 @@ const config = {
             items: [
               {
                 label: 'Note',
-                to: '/docs/intro',
+                to: '/docs/Note/intro',
+              },
+              {
+                label: 'Armbian',
+                to: '/docs/玩转Armbian盒子/intro',
               },
             ],
           },
