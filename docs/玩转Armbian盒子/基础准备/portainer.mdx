@@ -1,0 +1,39 @@
+---
+sidebar_position: 3
+title: Docker安装portainer可视化界面
+description: Docker安装portainer可视化界面的方法
+# image: a thumbnail image to be shown in social media cards
+keywords: [armbian, docker, portainer, 可视化界面]
+---
+
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# Docker 安装 portainer 可视化界面
+
+## 英文版
+
+```mdx-code-block
+<BrowserWindow>
+```
+
+```bash
+docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock --restart=always --name prtainer portainer/portainer
+```
+
+```mdx-code-block
+</BrowserWindow>
+```
+
+## 中文版
+
+```mdx-code-block
+<BrowserWindow>
+```
+
+```bash
+docker run -d --restart=always --name=portainer -p 9999:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data 6053537/portainer:linux-arm64
+```
+
+```mdx-code-block
+</BrowserWindow>
+```
