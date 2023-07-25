@@ -8,14 +8,7 @@
  * 
  */
 
-:root {
-  --windowColor: rgb(40, 42, 53);
-}
-
 .browserWindow {
-  /* border-top-left-radius: 200px;
-  border-top-right-radius: 200px; */
-  /* border: 3px solid var(--windowColor); */
   border-radius: var(--ifm-global-radius);
   box-shadow: var(--ifm-global-shadow-lw);
   margin-bottom: var(--ifm-leading);
@@ -25,7 +18,7 @@
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
   align-items: center;
-  background: var(--windowColor);
+  background: rgb(40, 42, 53);
   display: flex;
   padding: 0.5rem 1rem;
 }
@@ -50,8 +43,6 @@
 }
 
 .browserWindowAddressBar {
-  /* border-top-left-radius: 12.5px;
-  border-top-right-radius: 12.5px; */
   flex: 1 0;
   margin: 0 1rem 0 0.5rem;
   border-radius: 12.5px;
