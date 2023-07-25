@@ -16,7 +16,7 @@ import MacCode from "@site/src/components/MacCode";
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock --restart=always --name prtainer portainer/portainer
 ```
 
@@ -30,7 +30,7 @@ docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock --restar
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 docker run -d --restart=always --name=portainer -p 9999:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data 6053537/portainer:linux-arm64
 ```
 

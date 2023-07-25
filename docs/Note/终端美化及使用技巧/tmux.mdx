@@ -25,14 +25,14 @@ tmux 是一个终端复用工具，可以在一个终端中同时运行多个终
 <Tabs>
   <TabItem value="linux" label="Linux" default>
 
-```bash
+```bash showLineNumbers
 sudo apt install tmux
 ```
 
   </TabItem>
   <TabItem value="mac" label="macOS">
 
-```bash
+```bash showLineNumbers
 brew install tmux
 ```
 
@@ -61,7 +61,7 @@ mac os 需先安装 homebrew
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 vim ~/.tmux.conf
 ```
@@ -76,7 +76,7 @@ vim ~/.tmux.conf
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
@@ -101,7 +101,7 @@ run '~/.tmux/plugins/tpm/tpm'
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 # type this in terminal if tmux is already running
 tmux source ~/.tmux.conf
 ```
@@ -117,7 +117,7 @@ tmux source ~/.tmux.conf
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 set -g @plugin 'dracula/tmux'
 set -g @dracula-plugins "cpu-usage gpu-usage ram-usage network-bandwidth"
 set -g @dracula-network-bandwidth-colors "pink dark_gray"
@@ -144,7 +144,7 @@ set -g @dracula-border-contrast true
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 set -g mouse on
 ```
 

@@ -16,7 +16,7 @@ import MacCode from "@site/src/components/MacCode";
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 nano /etc/apt/sources.list
 ```
 
@@ -30,7 +30,7 @@ nano /etc/apt/sources.list
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 deb https://mirrors.aliyun.com/debian stable main contrib non-free
 deb https://mirrors.aliyun.com/debian stable-updates main contrib non-free
 ```
@@ -42,7 +42,7 @@ deb https://mirrors.aliyun.com/debian stable-updates main contrib non-free
 :::tip
 如果没有 nano 编辑器的请先下载安装 nano 或直接使用自带的 vim 编辑器
 
-```bash
+```bash showLineNumbers
 sudo apt-get install nano
 ```
 
@@ -54,7 +54,7 @@ sudo apt-get install nano
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 sudo apt-get update
 sudo apt-get upgrade
 ```
@@ -71,7 +71,7 @@ sudo apt-get upgrade
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh --mirror Aliyun #调用阿里云镜像
 ```
@@ -86,7 +86,7 @@ sh get-docker.sh --mirror Aliyun #调用阿里云镜像
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 nano /etc/docker/daemon.json
 ```
 
@@ -120,7 +120,7 @@ nano /etc/docker/daemon.json
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 systemctl daemon-reload
 systemctl restart docker
 ```

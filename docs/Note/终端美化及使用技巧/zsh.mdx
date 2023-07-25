@@ -20,7 +20,7 @@ oh-my-zsh 是一个 zsh 的扩展工具，可以美化 zsh 的外观，提供了
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -54,7 +54,7 @@ zsh-autosuggestions 可以进行命令历史记录自动补全
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
@@ -68,7 +68,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 plugins=(
     # other plugins...
     zsh-autosuggestions
@@ -93,7 +93,7 @@ zsh-syntax-highlighting 可以进行命令语法高亮
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
@@ -107,7 +107,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 plugins=( [plugins...] zsh-syntax-highlighting)
 ```
 
@@ -129,7 +129,7 @@ extract 是一条命令解压多种压缩包格式
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 extract <filename>
 ```
 
@@ -151,7 +151,7 @@ fzf 可以进行命令历史记录等模糊搜索
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
@@ -171,7 +171,7 @@ conda-zsh-completion 可以进行 conda 命令的补全
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 git clone https://github.com/esc/conda-zsh-completion ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/conda-zsh-completion
 ```
 
@@ -185,7 +185,7 @@ git clone https://github.com/esc/conda-zsh-completion ${ZSH_CUSTOM:=~/.oh-my-zsh
 <MacCode>
 ```
 
-```bash
+```bash showLineNumbers
 plugins=( [plugins...] conda-zsh-completion)
 autoload -U compinit && compinit
 ```
