@@ -6,6 +6,7 @@ description: tmux美化相关设置
 keywords: [tmux, 美化]
 ---
 
+import MacCode from "@site/src/components/MacCode";
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
@@ -16,6 +17,10 @@ tmux 是一个终端复用工具，可以在一个终端中同时运行多个终
 :::
 
 ## 安装 tmux
+
+```mdx-code-block
+<MacCode>
+```
 
 <Tabs>
   <TabItem value="linux" label="Linux" default>
@@ -34,6 +39,10 @@ brew install tmux
   </TabItem>
 </Tabs>
 
+```mdx-code-block
+</MacCode>
+```
+
 :::tip
 mac os 需先安装 homebrew
 :::
@@ -48,12 +57,24 @@ mac os 需先安装 homebrew
 
 1. 首先安装 tpm
 
+```mdx-code-block
+<MacCode>
+```
+
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 vim ~/.tmux.conf
 ```
 
+```mdx-code-block
+</MacCode>
+```
+
 填入以下内容
+
+```mdx-code-block
+<MacCode>
+```
 
 ```bash
 # List of plugins
@@ -70,15 +91,31 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 run '~/.tmux/plugins/tpm/tpm'
 ```
 
+```mdx-code-block
+</MacCode>
+```
+
 2. 加载配置
+
+```mdx-code-block
+<MacCode>
+```
 
 ```bash
 # type this in terminal if tmux is already running
 tmux source ~/.tmux.conf
 ```
 
+```mdx-code-block
+</MacCode>
+```
+
 3. 安装 dracula 主题
    在～/.tmux.conf 填入以下内容
+
+```mdx-code-block
+<MacCode>
+```
 
 ```bash
 set -g @plugin 'dracula/tmux'
@@ -87,6 +124,10 @@ set -g @dracula-network-bandwidth-colors "pink dark_gray"
 set -g @dracula-show-powerline true
 set -g @dracula-show-flags true
 set -g @dracula-border-contrast true
+```
+
+```mdx-code-block
+</MacCode>
 ```
 
 4. Activating theme
@@ -99,6 +140,14 @@ set -g @dracula-border-contrast true
 
 在～/.tmux.conf 填入以下内容
 
+```mdx-code-block
+<MacCode>
+```
+
 ```bash
 set -g mouse on
+```
+
+```mdx-code-block
+</MacCode>
 ```

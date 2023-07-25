@@ -18,10 +18,9 @@ interface Props {
   bodyStyle?: CSSProperties;
 }
 
-export default function BrowserWindow({
+export default function MacCode({
   children,
   minHeight,
-  url = 'http://localhost:3000',
   style,
   bodyStyle,
 }: Props): JSX.Element {
@@ -33,15 +32,7 @@ export default function BrowserWindow({
           <span className={styles.dot} style={{background: '#fbbe3c'}} />
           <span className={styles.dot} style={{background: '#58cb42'}} />
         </div>
-        {/* <div className={clsx(styles.browserWindowAddressBar, 'text--truncate')}>
-          {url}
-        </div> */}
         <div className={styles.browserWindowMenuIcon}>
-          {/* <div>
-            <span className={styles.bar} />
-            <span className={styles.bar} />
-            <span className={styles.bar} />
-          </div> */}
         </div>
       </div>
 

@@ -6,14 +6,14 @@ description: armbian系统安装Docker的方法
 keywords: [armbian, docker, 安装]
 ---
 
-import BrowserWindow from "@site/src/components/BrowserWindow";
+import MacCode from "@site/src/components/MacCode";
 
 # 安装 Docker
 
 ## 更改 Armbian 软件源（Debian）
 
 ```mdx-code-block
-<BrowserWindow>
+<MacCode>
 ```
 
 ```bash
@@ -21,13 +21,13 @@ nano /etc/apt/sources.list
 ```
 
 ```mdx-code-block
-</BrowserWindow>
+</MacCode>
 ```
 
 将文件中的内容替换为以下内容
 
 ```mdx-code-block
-<BrowserWindow>
+<MacCode>
 ```
 
 ```bash
@@ -36,7 +36,7 @@ deb https://mirrors.aliyun.com/debian stable-updates main contrib non-free
 ```
 
 ```mdx-code-block
-</BrowserWindow>
+</MacCode>
 ```
 
 :::tip
@@ -51,7 +51,7 @@ sudo apt-get install nano
 ## 更新软件源
 
 ```mdx-code-block
-<BrowserWindow>
+<MacCode>
 ```
 
 ```bash
@@ -60,7 +60,7 @@ sudo apt-get upgrade
 ```
 
 ```mdx-code-block
-</BrowserWindow>
+</MacCode>
 ```
 
 ## 安装&配置 docker
@@ -68,7 +68,7 @@ sudo apt-get upgrade
 1. 安装 docker
 
 ```mdx-code-block
-<BrowserWindow>
+<MacCode>
 ```
 
 ```bash
@@ -77,13 +77,13 @@ sh get-docker.sh --mirror Aliyun #调用阿里云镜像
 ```
 
 ```mdx-code-block
-</BrowserWindow>
+</MacCode>
 ```
 
 2. 更换 docker 加速源
 
 ```mdx-code-block
-<BrowserWindow>
+<MacCode>
 ```
 
 ```bash
@@ -91,13 +91,13 @@ nano /etc/docker/daemon.json
 ```
 
 ```mdx-code-block
-</BrowserWindow>
+</MacCode>
 ```
 
 将文件中的内容替换为以下内容
 
 ```mdx-code-block
-<BrowserWindow>
+<MacCode>
 ```
 
 ```json
@@ -111,13 +111,13 @@ nano /etc/docker/daemon.json
 ```
 
 ```mdx-code-block
-</BrowserWindow>
+</MacCode>
 ```
 
 3. 重启 docker
 
 ```mdx-code-block
-<BrowserWindow>
+<MacCode>
 ```
 
 ```bash
@@ -126,5 +126,5 @@ systemctl restart docker
 ```
 
 ```mdx-code-block
-</BrowserWindow>
+</MacCode>
 ```

@@ -1,0 +1,110 @@
+---
+sidebar_position: 4
+title: ssh免密配置
+description: ssh免密配置
+# image: a thumbnail image to be shown in social media cards
+keywords: [ssh, 免密，密钥]
+---
+
+import MacCode from "@site/src/components/MacCode";
+
+# ssh 免密配置
+
+## 1. 生成密钥
+
+```mdx-code-block
+<MacCode>
+```
+
+```bash
+ssh-keygen -t rsa
+```
+
+```mdx-code-block
+</MacCode>
+```
+
+## 2. 将公钥复制到目标主机
+
+```mdx-code-block
+<MacCode>
+```
+
+```bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
+```
+
+```mdx-code-block
+</MacCode>
+```
+
+:::tip
+或者手动复制本机~/.ssh/id_rsa.pub 文件内容到目标主机~/.ssh/authorized_keys 文件中
+:::
+
+## 3. 测试
+
+```mdx-code-block
+<MacCode>
+```
+
+```bash
+ssh user@host
+```
+
+```mdx-code-block
+</MacCode>
+```
+
+## 4. 配置 config 文件
+
+```mdx-code-block
+<MacCode>
+```
+
+```bash
+vim ~/.ssh/config
+```
+
+```mdx-code-block
+</MacCode>
+```
+
+在其中添加如下内容：
+
+```mdx-code-block
+<MacCode>
+```
+
+```bash
+Host host
+    HostName host
+    User user
+    Port port
+    IdentityFile ~/.ssh/id_rsa
+```
+
+```mdx-code-block
+</MacCode>
+```
+
+## 5. 配置完成
+
+配置完成后，可以直接使用如下命令登录目标主机：
+
+```mdx-code-block
+<MacCode>
+```
+
+```bash
+ssh host
+```
+
+```mdx-code-block
+</MacCode>
+```
+
+## 参考
+
+1. https://blog.csdn.net/qq_34644203/article/details/124140491
+2. https://blog.csdn.net/mochong/article/details/122966556
