@@ -80,7 +80,7 @@ const config = {
           // },
           {
             type: "dropdown",
-            label: "Note",
+            label: "Docs",
             position: "left",
             to: "docs/Note/intro",
             items: [

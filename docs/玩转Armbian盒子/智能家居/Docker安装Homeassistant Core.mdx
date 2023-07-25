@@ -1,0 +1,52 @@
+---
+sidebar_position: 2
+title: Docker安装Homeassistant Core
+description: Docker安装Homeassistant Core的方法
+# image: a thumbnail image to be shown in social media cards
+keywords:
+  [
+    armbian,
+    homeassistant,
+    hassio,
+    docker,
+    hassos,
+    homeassistant core,
+    homeassistant core安装,
+    docker安装homeassistant core,
+    docker安装homeassistant core教程,
+    docker安装homeassistant core方法,
+    docker安装homeassistant core步骤,
+    docker安装homeassistant core指南,
+    doc,
+  ]
+---
+
+import MacCode from "@site/src/components/MacCode";
+
+# Docker 安装 Homeassistant Core
+
+## Docker 命令
+
+```mdx-code-block
+<MacCode>
+```
+
+```bash showLineNumbers
+docker run -d --restart always --name="hass" -v /home/hass/config:/config -p 8123:8123 homeassistant/home-assistant:latest
+```
+
+```mdx-code-block
+</MacCode>
+```
+
+:::info
+
+-d：表示在后台运行
+
+–name：给容器设置一个名称，用于识别，这里起名叫做 hass
+
+-v：配置目录映射（容器内的指定目录直接映射到本地主机的对应目录，比如上面那句命令，意思就是将容器里 hass 的 config 目录映射到 /home/hass/config 这个目录里面）
+
+-p：映射端口（将容器内的 8123 端口直接映射到物理机的 8123 端口，这样服务器的 IP 地址+端口号即可访问 hass 页面） 最后就是运行刚才下载的容器镜像了，对于其他的版本了，注意要加上 tag,避免自动下载最新版本。
+
+:::
