@@ -7,32 +7,31 @@ keywords: [armbian, docker, portainer, 可视化界面]
 ---
 
 import MacCode from "@site/src/components/MacCode";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 # Docker 安装 portainer 可视化界面
-
-## 英文版
 
 ```mdx-code-block
 <MacCode>
 ```
+
+<Tabs>
+  <TabItem value="英文版" label="英文版">
 
 ```bash showLineNumbers
 docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock --restart=always --name prtainer portainer/portainer
 ```
 
-```mdx-code-block
-</MacCode>
-```
-
-## 中文版
-
-```mdx-code-block
-<MacCode>
-```
+  </TabItem>
+  <TabItem value="中文版" label="中文版" default>
 
 ```bash showLineNumbers
 docker run -d --restart=always --name=portainer -p 9999:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data 6053537/portainer:linux-arm64
 ```
+
+  </TabItem>
+</Tabs>
 
 ```mdx-code-block
 </MacCode>

@@ -24,3 +24,6 @@ import Link from "@docusaurus/Link";
 
 - <Link to= "/docs/玩转Armbian盒子/智能家居/安装Homeassitant%20Supervisor">安装 Homeassitant Supervisor</Link>
 - <Link to= "/docs/玩转Armbian盒子/智能家居/Docker安装Homeassistant%20Core">Docker 安装 Homeassistant Core</Link>
+- <Link to= "/docs/玩转Armbian盒子/智能家居/HASS安装HACS">HASS安装HACS</Link>
+- <Link to= "/docs/玩转Armbian盒子/智能家居/Docker安装Homebridge">Docker安装Homebridge</Link>
+- <Link to= "/docs/玩转Armbian盒子/智能家居/Homebridgewol">Homebridge WOL</Link>
