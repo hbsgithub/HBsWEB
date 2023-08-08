@@ -1,0 +1,116 @@
+---
+sidebar_position: 5
+title: Homebridge WOL
+description: Homebridge wol的使用方法
+# image: a thumbnail image to be shown in social media cards
+keywords:
+  [
+    Homebridge,
+    Homebridge wol,
+    Homebridge插件,
+    Homebridge wol插件,
+    Homebridge wol使用,
+  ]
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import MacCode from "@site/src/components/MacCode";
+
+# Homebridge WOL
+
+:::info
+Homebridge WOL 可以将 PC 或者 NAS 等模拟成苹果家庭中的一个开关，控制其开关。
+:::
+
+## Wake up
+
+:::tip
+前提：打开 PC 或 NAS 系统和 bios 中的网络唤醒选项
+:::
+
+找到 PC 或 NAS 的网卡的 mac 地址并填入即可，注意黑群的网卡的 mac 地址需填入真实的 mac 地址（bios 或者主板上可查）
+
+## Shutdown 命令
+
+### PC
+
+- ssh 终端为 cmd 或 powershell
+
+```mdx-code-block
+<MacCode>
+```
+
+```bash showLineNumbers
+ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa user@ip shutdown /s /t 0
+```
+
+```mdx-code-block
+</MacCode>
+```
+
+- ssh 终端为 bash(wsl)
+
+```mdx-code-block
+<MacCode>
+```
+
+```bash showLineNumbers
+ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa user@ip /mnt/c/Windows/System32/cmd.exe /c shutdown /s /t 0
+```
+
+```mdx-code-block
+</MacCode>
+```
+
+:::tip
+
+设置 Windows SSH 默认终端的方法
+
+在 win10 的 cmd 或 powershell 中运行如下指令:
+
+```mdx-code-block
+<MacCode>
+```
+
+<Tabs>
+  <TabItem value="powershell" label="设置为powershell" default>
+
+```bash showLineNumbers
+New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -PropertyType String -Force
+```
+
+  </TabItem>
+  <TabItem value="bash" label="设置为bash(wsl)">
+
+```bash showLineNumbers
+New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Windows\System32\bash.exe" -PropertyType String -Force
+```
+
+  </TabItem>
+</Tabs>
+
+```mdx-code-block
+</MacCode>
+```
+
+:::
+
+### NAS
+
+```mdx-code-block
+<MacCode>
+```
+
+```bash showLineNumbers
+ssh -o StrictHostKeyChecking=no -i /homebridge/id_rsa root@ip shutdown -h now
+```
+
+```mdx-code-block
+</MacCode>
+```
+
+## 参考
+
+1. [Running on Synology Docker and turn Windows 10 on off using SSH and Samba](https://github.com/AlexGustafsson/homebridge-wol/wiki/Running-on-Synology-Docker-and-turn-Windows-10-on-off-using-SSH-and-Samba)
+2. [Home Assistant 控制群晖 DSM 远程开机和关闭](https://panfake.com/2020/01/23/home-assistant-synology-remote-power-on-power-off/)
