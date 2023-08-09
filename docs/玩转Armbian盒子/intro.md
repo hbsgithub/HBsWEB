@@ -27,3 +27,9 @@ import Link from "@docusaurus/Link";
 - <Link to= "/docs/玩转Armbian盒子/智能家居/HASS安装HACS">HASS安装HACS</Link>
 - <Link to= "/docs/玩转Armbian盒子/智能家居/Docker安装Homebridge">Docker安装Homebridge</Link>
 - <Link to= "/docs/玩转Armbian盒子/智能家居/Homebridgewol">Homebridge WOL</Link>
+
+## <Link to= "/docs/category/软路由">软路由</Link>
+
+- <Link to= "/docs/玩转Armbian盒子/软路由/Docker安装Openwrt">Docker安装Openwrt</Link>
+- <Link to= "/docs/玩转Armbian盒子/软路由/Openwrt作为旁路由使用">Openwrt作为旁路由使用</Link>
+- <Link to= "/docs/玩转Armbian盒子/软路由/OpenWRT旁路由打开ipv6">OpenWRT旁路由打开ipv6</Link>

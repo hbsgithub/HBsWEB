@@ -1,0 +1,19 @@
+---
+sidebar_position: 3
+title: OpenWRT旁路由打开ipv6
+description: OpenWRT旁路由打开ipv6的方法
+# image: a thumbnail image to be shown in social media cards
+keywords: [OpenWRT, ipv6]
+---
+
+# OpenWRT 旁路由打开 ipv6
+
+1. 首先确认有 dhcpv6 客户端插件，没有则安装 odhcp6c、ipv6helper、luci-proto-ipv6、odhcpd-ipv6only、odhcpd
+
+2. 网络-接口，添加新接口，命名 lan6，接口协议选择 dhcpv6 客户端，包括接口选 eth0
+
+3. 创建后，防火墙设置选 lan，保存并应用
+
+4. 点连接 lan6 并重启 OP
+
+5. DHCP/DNS-高级设置，取消禁止解析 IPv6 DNS 记录
