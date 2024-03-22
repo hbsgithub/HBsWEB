@@ -32,3 +32,9 @@ docker run -d \
     
    
    密码: changeme
+
+:::tip
+
+因为Nginx Proxy Manager位于容器里面，所以要反代本机的端口时，需使用172.17.0.1来代替127.0.0.1
+
+:::
