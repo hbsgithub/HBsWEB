@@ -4,6 +4,52 @@
  * work well for content-centric websites.
  */
 
+/* 首页整屏显示 */
+:root {
+  --ifm-navbar-height: 64px;
+  --ifm-announcement-bar-height: 0;
+}
+
+/* 移除默认间距 */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 确保布局稳定 */
+.Layout.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Layout.root > div {
+  flex: 1;
+}
+
+/* 首页整屏显示 - 确保没有滚动 */
+.Layout.Layout > main {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 确保内容不超出视口 */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* 确保main容器高度正确 */
+.Layout.root > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Layout.root > div > header {
+  height: var(--ifm-navbar-height);
+}
+
 /* You can override the default Infima variables here. */
 /* :root {
   --ifm-color-primary: #2e8555;
@@ -168,4 +214,32 @@ div[class^="announcementBar_"] {
     rgb(37, 80, 70) 10px,
     rgb(37, 80, 70) 40px
   );
+}
+
+/* 首页整屏显示 - 确保没有滚动 */
+.Layout.Layout > main {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 禁止页面滚动 */
+body {
+  overflow-x: hidden;
+}
+
+/* 确保内容不超出视口 */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* 确保main容器高度正确 */
+.Layout.root > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Layout.root > div > header {
+  height: var(--ifm-navbar-height);
 }
